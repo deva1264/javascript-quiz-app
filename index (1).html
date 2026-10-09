@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeBrew Quiz | JavaScript Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card" id="app">
+    <header class="top">
+      <h1>⚡ CodeBrew Quiz</h1>
+      <div class="meta">
+        <span id="progress-text"></span>
+        <span id="score-text"></span>
+      </div>
+      <div class="bar"><div class="bar-fill" id="bar-fill"></div></div>
+    </header>
+
+    <!-- Question, options and final screen are all injected by script.js -->
+    <section id="quiz" aria-live="polite"></section>
+
+    <footer class="bottom">
+      <button id="next-btn" class="btn primary" disabled>Next Question</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
